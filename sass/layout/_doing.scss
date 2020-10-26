@@ -1,27 +1,24 @@
 .doing-list {
   display: flex;
   margin-bottom: 94px;
-}
 
-.doing-list-item {
-  position: relative;
+  &-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .doing-title {
-  margin-bottom: 50px;
-}
-
-.doing-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.doing-title,
-.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 
 .doing-bc {
